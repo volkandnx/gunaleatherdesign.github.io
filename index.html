@@ -1,25 +1,36 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" id="html-lang">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GunaLeather Design | Crafted Heritage, Modern Elegance</title>
-    <meta name="description" content="Luxurious handcrafted premium leather goods. Discover timeless craftsmanship in every bag, wallet, and belt.">
+    <title data-i18n="page_title">GunaLeather Design | Crafted Heritage, Modern Elegance</title>
+    <meta name="description"
+        content="Luxurious handcrafted premium leather goods. Discover timeless craftsmanship in every bag, wallet, and belt."
+        data-i18n-attr="description:page_desc">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <header>
         <nav class="container">
             <div class="logo">GunaLeather Design</div>
             <ul class="nav-links">
-                <li><a href="#categories">Collections</a></li>
-                <li><a href="#products">Shop</a></li>
-                <li><a href="#legacy">Our Legacy</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#categories" data-i18n="nav_collections">Collections</a></li>
+                <li><a href="#products" data-i18n="nav_shop">Shop</a></li>
+                <li><a href="#legacy" data-i18n="nav_legacy">Our Legacy</a></li>
+                <li><a href="#contact" data-i18n="nav_contact">Contact</a></li>
             </ul>
+            <div class="lang-switcher">
+                <button id="btn-en" class="lang-btn active">EN</button>
+                <span>|</span>
+                <button id="btn-tr" class="lang-btn">TR</button>
+            </div>
         </nav>
     </header>
 
@@ -27,38 +38,38 @@
         <section class="hero">
             <div class="hero-image" style="background-image: url('assets/hero_bag.png');"></div>
             <div class="hero-content">
-                <h1 class="fade-in">GunaLeather Design</h1>
-                <p class="tagline fade-in">Crafted Heritage, Modern Elegance</p>
-                <a href="#products" class="btn btn-primary fade-in">Explore Collection</a>
+                <h1 class="fade-in" data-i18n="hero_title">GunaLeather Design</h1>
+                <p class="tagline fade-in" data-i18n="hero_tagline">Crafted Heritage, Modern Elegance</p>
+                <a href="#products" class="btn btn-primary fade-in" data-i18n="hero_btn">Explore Collection</a>
             </div>
         </section>
 
         <section id="categories" class="categories container">
-            <h2 class="section-title">The Collections</h2>
+            <h2 class="section-title" data-i18n="section_collections">The Collections</h2>
             <div class="category-grid">
                 <div class="category-card">
                     <img src="assets/category_bags.png" alt="Bags Collection">
                     <div class="category-overlay">
-                        <h3>Bags</h3>
+                        <h3 data-i18n="cat_bags">Bags</h3>
                     </div>
                 </div>
                 <div class="category-card">
                     <img src="assets/category_wallets.png" alt="Wallets Collection">
                     <div class="category-overlay">
-                        <h3>Wallets</h3>
+                        <h3 data-i18n="cat_wallets">Wallets</h3>
                     </div>
                 </div>
                 <div class="category-card">
                     <img src="assets/category_belts.png" alt="Belts Collection">
                     <div class="category-overlay">
-                        <h3>Belts</h3>
+                        <h3 data-i18n="cat_belts">Belts</h3>
                     </div>
                 </div>
             </div>
         </section>
 
         <section id="products" class="products container">
-            <h2 class="section-title">Essential Pieces</h2>
+            <h2 class="section-title" data-i18n="section_exclusive">Essential Pieces</h2>
             <div class="product-grid">
                 <!-- Product 1 -->
                 <div class="product-card">
@@ -66,9 +77,11 @@
                         <img src="assets/product_1.png" alt="The Legacy Tote Bag">
                     </div>
                     <div class="product-info">
-                        <h3>The Legacy Tote Bag</h3>
-                        <p>Hand-stitched full-grain leather, built to endure.</p>
-                        <a href="https://wa.me/+905550453659" class="btn btn-whatsapp">Inquire on WhatsApp</a>
+                        <h3 data-i18n="p1_name">The Legacy Tote Bag</h3>
+                        <p data-i18n="p1_desc">Hand-stitched full-grain leather, built to endure.</p>
+                        <a href="https://wa.me/+905550453659" class="btn btn-whatsapp" data-i18n="btn_whatsapp">Inquire
+                            on
+                            WhatsApp</a>
                     </div>
                 </div>
                 <!-- Product 2 -->
@@ -77,9 +90,11 @@
                         <img src="assets/product_2.png" alt="The Artisan Wallet">
                     </div>
                     <div class="product-info">
-                        <h3>The Artisan Wallet</h3>
-                        <p>Minimalist design, maximum craftsmanship.</p>
-                        <a href="https://wa.me/+905550453659" class="btn btn-whatsapp">Inquire on WhatsApp</a>
+                        <h3 data-i18n="p2_name">The Artisan Wallet</h3>
+                        <p data-i18n="p2_desc">Minimalist design, maximum craftsmanship.</p>
+                        <a href="https://wa.me/+905550453659" class="btn btn-whatsapp" data-i18n="btn_whatsapp">Inquire
+                            on
+                            WhatsApp</a>
                     </div>
                 </div>
                 <!-- Product 3 -->
@@ -88,9 +103,11 @@
                         <img src="assets/product_3.png" alt="The Classic Belt">
                     </div>
                     <div class="product-info">
-                        <h3>The Classic Belt</h3>
-                        <p>Timeless accessory for the discerning individual.</p>
-                        <a href="https://wa.me/+905550453659" class="btn btn-whatsapp">Inquire on WhatsApp</a>
+                        <h3 data-i18n="p3_name">The Classic Belt</h3>
+                        <p data-i18n="p3_desc">Timeless accessory for the discerning individual.</p>
+                        <a href="https://wa.me/+905550453659" class="btn btn-whatsapp" data-i18n="btn_whatsapp">Inquire
+                            on
+                            WhatsApp</a>
                     </div>
                 </div>
                 <!-- Product 4 -->
@@ -99,9 +116,11 @@
                         <img src="assets/product_4.png" alt="The Heritage Satchel">
                     </div>
                     <div class="product-info">
-                        <h3>The Heritage Satchel</h3>
-                        <p>Meticulous stitching meets modern utility.</p>
-                        <a href="https://wa.me/+905550453659" class="btn btn-whatsapp">Inquire on WhatsApp</a>
+                        <h3 data-i18n="p4_name">The Heritage Satchel</h3>
+                        <p data-i18n="p4_desc">Meticulous stitching meets modern utility.</p>
+                        <a href="https://wa.me/+905550453659" class="btn btn-whatsapp" data-i18n="btn_whatsapp">Inquire
+                            on
+                            WhatsApp</a>
                     </div>
                 </div>
                 <!-- Product 5 -->
@@ -110,9 +129,11 @@
                         <img src="assets/product_5.png" alt="The Voyage Messenger">
                     </div>
                     <div class="product-info">
-                        <h3>The Voyage Messenger</h3>
-                        <p>Elegant companion for your daily journey.</p>
-                        <a href="https://wa.me/+905550453659" class="btn btn-whatsapp">Inquire on WhatsApp</a>
+                        <h3 data-i18n="p5_name">The Voyage Messenger</h3>
+                        <p data-i18n="p5_desc">Elegant companion for your daily journey.</p>
+                        <a href="https://wa.me/+905550453659" class="btn btn-whatsapp" data-i18n="btn_whatsapp">Inquire
+                            on
+                            WhatsApp</a>
                     </div>
                 </div>
                 <!-- Product 6 -->
@@ -121,9 +142,11 @@
                         <img src="assets/product_6.png" alt="The Gold-Line Cardholder">
                     </div>
                     <div class="product-info">
-                        <h3>The Gold-Line Cardholder</h3>
-                        <p>Ultra-slim profile with antique gold accents.</p>
-                        <a href="https://wa.me/+905550453659" class="btn btn-whatsapp">Inquire on WhatsApp</a>
+                        <h3 data-i18n="p6_name">The Gold-Line Cardholder</h3>
+                        <p data-i18n="p6_desc">Ultra-slim profile with antique gold accents.</p>
+                        <a href="https://wa.me/+905550453659" class="btn btn-whatsapp" data-i18n="btn_whatsapp">Inquire
+                            on
+                            WhatsApp</a>
                     </div>
                 </div>
             </div>
@@ -132,9 +155,12 @@
         <section id="legacy" class="legacy">
             <div class="legacy-background" style="background-image: url('assets/craftsmanship.png');"></div>
             <div class="legacy-content container">
-                <h2>The Guna Legacy</h2>
-                <p>Rooted in the Günal family's dedication to quality, our workshop blends traditional craftsmanship with timeless design. Every piece is a testament to our commitment to durability and quiet luxury.</p>
-                <p>Hand-selected hides, meticulously stitched by skilled hands — this is heritage you can feel.</p>
+                <h2 data-i18n="legacy_title">The GunaLeather Design Legacy</h2>
+                <p data-i18n="legacy_p1">Rooted in the Günal family's dedication to quality, our workshop blends
+                    traditional craftsmanship with timeless design. Every piece is a testament to our commitment to
+                    durability and quiet luxury.</p>
+                <p data-i18n="legacy_p2">Hand-selected hides, meticulously stitched by skilled hands — this is heritage
+                    you can feel.</p>
             </div>
         </section>
     </main>
@@ -143,19 +169,23 @@
         <div class="container footer-content">
             <div class="footer-logo">GunaLeather Design</div>
             <div class="footer-links">
-                <a href="#">Instagram</a>
-                <a href="#">Facebook</a>
-                <a href="#">Contact</a>
+                <a href="#" data-i18n="footer_instagram">Instagram</a>
+                <a href="#" data-i18n="footer_facebook">Facebook</a>
+                <a href="#" data-i18n="footer_contact">Contact</a>
             </div>
-            <p class="copyright">GunaLeather Design &copy; 2026. All rights reserved.</p>
+            <p class="copyright" data-i18n="footer_copy">GunaLeather Design &copy; 2026. All rights reserved.</p>
         </div>
     </footer>
 
     <a href="https://wa.me/+905550453659" class="whatsapp-sticky" aria-label="Contact on WhatsApp">
-        <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><path d="M16 0C7.163 0 0 7.163 0 16c0 2.825.733 5.476 2.016 7.787L0 32l8.47-2.182C10.706 31.18 13.268 32 16 32c8.837 0 16-7.163 16-16S24.837 0 16 0zm8.614 22.71c-.3.844-1.503 1.543-2.074 1.642-.516.09-1.18.125-1.9-.112-.45-.148-1.025-.347-1.764-.668-3.153-1.371-5.188-4.54-5.345-4.75-.157-.21-1.28-1.704-1.28-3.25 0-1.547.81-2.31 1.098-2.613.288-.303.628-.38.838-.38.21 0 .42.002.597.01.185.008.435-.07.68.525.245.595.836 2.035.91 2.183.073.148.122.32.024.516-.098.197-.148.32-.296.492-.148.172-.31.385-.443.516-.148.147-.303.31-.13.606.172.295.765 1.258 1.643 2.04 1.13 1.005 2.083 1.317 2.378 1.463.295.147.468.123.642-.07.174-.194.743-.865.942-1.16.198-.295.395-.246.666-.147s1.723.811 2.018.958c.295.148.492.22.566.345.074.12.074.704-.226 1.548z" fill="#B8860B"/></svg>
+        <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+            <path
+                d="M16 0C7.163 0 0 7.163 0 16c0 2.825.733 5.476 2.016 7.787L0 32l8.47-2.182C10.706 31.18 13.268 32 16 32c8.837 0 16-7.163 16-16S24.837 0 16 0zm8.614 22.71c-.3.844-1.503 1.543-2.074 1.642-.516.09-1.18.125-1.9-.112-.45-.148-1.025-.347-1.764-.668-3.153-1.371-5.188-4.54-5.345-4.75-.157-.21-1.28-1.704-1.28-3.25 0-1.547.81-2.31 1.098-2.613.288-.303.628-.38.838-.38.21 0 .42.002.597.01.185.008.435-.07.68.525.245.595.836 2.035.91 2.183.073.148.122.32.024.516-.098.197-.148.32-.296.492-.148.172-.31.385-.443.516-.148.147-.303.31-.13.606.172.295.765 1.258 1.643 2.04 1.13 1.005 2.083 1.317 2.378 1.463.295.147.468.123.642-.07.174-.194.743-.865.942-1.16.198-.295.395-.246.666-.147s1.723.811 2.018.958c.295.148.492.22.566.345.074.12.074.704-.226 1.548z"
+                fill="#B8860B" />
+        </svg>
     </a>
 
     <script src="script.js"></script>
 </body>
-</html>
 
+</html>

@@ -1,7 +1,10 @@
 :root {
-    --primary-color: #36454F; /* Deep Charcoal */
-    --secondary-color: #6F4E37; /* Mocha Brown */
-    --accent-color: #B8860B; /* Antique Gold */
+    --primary-color: #36454F;
+    /* Deep Charcoal */
+    --secondary-color: #6F4E37;
+    /* Mocha Brown */
+    --accent-color: #B8860B;
+    /* Antique Gold */
     --text-color: #E0E0E0;
     --bg-dark: #121212;
     --font-serif: "Playfair Display", serif;
@@ -34,7 +37,9 @@ body {
 }
 
 /* Typography */
-h1, h2, h3 {
+h1,
+h2,
+h3 {
     font-family: var(--font-serif);
     color: var(--accent-color);
     font-weight: 500;
@@ -82,6 +87,36 @@ nav {
 
 .nav-links a:hover {
     color: var(--accent-color);
+}
+
+/* Language Switcher */
+.lang-switcher {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.8rem;
+    margin-left: 2rem;
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.lang-btn {
+    background: none;
+    border: none;
+    color: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+    font-family: var(--font-sans);
+    font-weight: 500;
+    transition: var(--transition);
+    padding: 0.2rem 0.5rem;
+}
+
+.lang-btn:hover {
+    color: var(--accent-color);
+}
+
+.lang-btn.active {
+    color: var(--accent-color);
+    font-weight: 700;
 }
 
 /* Hero Section */
@@ -213,7 +248,7 @@ nav {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0,0,0,0.4);
+    background: rgba(0, 0, 0, 0.4);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -225,7 +260,7 @@ nav {
 }
 
 .category-card:hover .category-overlay {
-    background: rgba(0,0,0,0.2);
+    background: rgba(0, 0, 0, 0.2);
 }
 
 .category-overlay h3 {
@@ -281,7 +316,7 @@ nav {
 
 .product-info p {
     font-size: 0.9rem;
-    color: rgba(255,255,255,0.6);
+    color: rgba(255, 255, 255, 0.6);
     margin-bottom: 1.5rem;
     height: 3rem;
 }
@@ -344,7 +379,7 @@ footer {
 }
 
 .footer-links a {
-    color: rgba(255,255,255,0.5);
+    color: rgba(255, 255, 255, 0.5);
     text-decoration: none;
     font-size: 0.8rem;
     text-transform: uppercase;
@@ -357,7 +392,7 @@ footer {
 
 .copyright {
     font-size: 0.75rem;
-    color: rgba(255,255,255,0.3);
+    color: rgba(255, 255, 255, 0.3);
 }
 
 /* Sticky WhatsApp */
@@ -394,15 +429,37 @@ footer {
 }
 
 @keyframes fadeIn {
-    from { opacity: 0; transform: translateY(20px); }
-    to { opacity: 1; transform: translateY(0); }
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 /* Mobile Responsiveness */
 @media (max-width: 768px) {
-    .nav-links { display: none; }
-    .hero-content h1 { font-size: 2.5rem; }
-    .category-grid { grid-template-columns: 1fr; }
-    .product-grid { grid-template-columns: 1fr; }
-    .legacy { height: auto; padding: 4rem 0; }
+    .nav-links {
+        display: none;
+    }
+
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .category-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .product-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .legacy {
+        height: auto;
+        padding: 4rem 0;
+    }
 }
