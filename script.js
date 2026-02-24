@@ -27,7 +27,7 @@ const translations = {
         p6_name: "The Gold-Line Cardholder",
         p6_desc: "Ultra-slim profile with antique gold accents.",
         btn_whatsapp: "Inquire on WhatsApp",
-        legacy_title: "The Guna Legacy",
+        legacy_title: "The GunaLether Legacy",
         legacy_p1: "Rooted in the Günal family's dedication to quality, our workshop blends traditional craftsmanship with timeless design. Every piece is a testament to our commitment to durability and quiet luxury.",
         legacy_p2: "Hand-selected hides, meticulously stitched by skilled hands — this is heritage you can feel.",
         footer_instagram: "Instagram",
@@ -63,7 +63,7 @@ const translations = {
         p6_name: "Gold-Line Kartlık",
         p6_desc: "Antika altın detaylı ultra ince profil.",
         btn_whatsapp: "WhatsApp'tan Bilgi Al",
-        legacy_title: "Guna Mirası",
+        legacy_title: "GunaLether Mirası",
         legacy_p1: "Günal ailesinin kaliteye olan tutkusundan doğan atölyemiz, geleneksel işçiliği zamansız tasarımla harmanlıyor. Her parça, dayanıklılık ve sessiz lüks anlayışımıza olan bağlılığımızın bir kanıtıdır.",
         legacy_p2: "Özenle seçilmiş deriler, usta ellerle titizlikle dikildi — bu hissedeceğiniz bir miras.",
         footer_instagram: "Instagram",
@@ -151,3 +151,4 @@ document.addEventListener('DOMContentLoaded', () => {
         observer.observe(el);
     });
 });
+
