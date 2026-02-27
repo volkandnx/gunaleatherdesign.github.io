@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title data-i18n="page_title">GunaLeather Design | Crafted Heritage, Modern Elegance</title>
+    <title data-i18n="page_title">GunaLetherDesign | Crafted Heritage, Modern Elegance</title>
     <meta name="description"
         content="Luxurious handcrafted premium leather goods. Discover timeless craftsmanship in every bag, wallet, and belt."
         data-i18n-attr="description:page_desc">
@@ -19,17 +19,35 @@
 <body>
     <header>
         <nav class="container">
-            <div class="logo">GunaLeather Design</div>
+            <div class="logo">GunaLetherDesign</div>
             <ul class="nav-links">
                 <li><a href="#categories" data-i18n="nav_collections">Collections</a></li>
                 <li><a href="#products" data-i18n="nav_shop">Shop</a></li>
                 <li><a href="#legacy" data-i18n="nav_legacy">Our Legacy</a></li>
                 <li><a href="#contact" data-i18n="nav_contact">Contact</a></li>
             </ul>
-            <div class="lang-switcher">
-                <button id="btn-en" class="lang-btn active">EN</button>
-                <span>|</span>
-                <button id="btn-tr" class="lang-btn">TR</button>
+            <div class="nav-actions">
+                <div class="lang-switcher">
+                    <button id="btn-en" class="lang-btn active">EN</button>
+                    <span>|</span>
+                    <button id="btn-tr" class="lang-btn">TR</button>
+                </div>
+                <button id="cart-btn" class="action-btn" aria-label="Shopping Cart">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z" />
+                        <path d="M3 6h18" />
+                        <path d="M16 10a4 4 0 0 1-8 0" />
+                    </svg>
+                    <span id="cart-count">0</span>
+                </button>
+                <button id="auth-btn" class="action-btn" aria-label="Account">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2" />
+                        <circle cx="12" cy="7" r="4" />
+                    </svg>
+                </button>
             </div>
         </nav>
     </header>
@@ -38,7 +56,7 @@
         <section class="hero">
             <div class="hero-image" style="background-image: url('assets/hero_bag.png');"></div>
             <div class="hero-content">
-                <h1 class="fade-in" data-i18n="hero_title">GunaLeather Design</h1>
+                <h1 class="fade-in" data-i18n="hero_title">GunaLetherDesign</h1>
                 <p class="tagline fade-in" data-i18n="hero_tagline">Crafted Heritage, Modern Elegance</p>
                 <a href="#products" class="btn btn-primary fade-in" data-i18n="hero_btn">Explore Collection</a>
             </div>
@@ -70,85 +88,8 @@
 
         <section id="products" class="products container">
             <h2 class="section-title" data-i18n="section_exclusive">Essential Pieces</h2>
-            <div class="product-grid">
-                <!-- Product 1 -->
-                <div class="product-card">
-                    <div class="product-image">
-                        <img src="assets/product_1.png" alt="The Legacy Tote Bag">
-                    </div>
-                    <div class="product-info">
-                        <h3 data-i18n="p1_name">The Legacy Tote Bag</h3>
-                        <p data-i18n="p1_desc">Hand-stitched full-grain leather, built to endure.</p>
-                        <a href="https://wa.me/+905550453659" class="btn btn-whatsapp" data-i18n="btn_whatsapp">Inquire
-                            on
-                            WhatsApp</a>
-                    </div>
-                </div>
-                <!-- Product 2 -->
-                <div class="product-card">
-                    <div class="product-image">
-                        <img src="assets/product_2.png" alt="The Artisan Wallet">
-                    </div>
-                    <div class="product-info">
-                        <h3 data-i18n="p2_name">The Artisan Wallet</h3>
-                        <p data-i18n="p2_desc">Minimalist design, maximum craftsmanship.</p>
-                        <a href="https://wa.me/+905550453659" class="btn btn-whatsapp" data-i18n="btn_whatsapp">Inquire
-                            on
-                            WhatsApp</a>
-                    </div>
-                </div>
-                <!-- Product 3 -->
-                <div class="product-card">
-                    <div class="product-image">
-                        <img src="assets/product_3.png" alt="The Classic Belt">
-                    </div>
-                    <div class="product-info">
-                        <h3 data-i18n="p3_name">The Classic Belt</h3>
-                        <p data-i18n="p3_desc">Timeless accessory for the discerning individual.</p>
-                        <a href="https://wa.me/+905550453659" class="btn btn-whatsapp" data-i18n="btn_whatsapp">Inquire
-                            on
-                            WhatsApp</a>
-                    </div>
-                </div>
-                <!-- Product 4 -->
-                <div class="product-card">
-                    <div class="product-image">
-                        <img src="assets/product_4.png" alt="The Heritage Satchel">
-                    </div>
-                    <div class="product-info">
-                        <h3 data-i18n="p4_name">The Heritage Satchel</h3>
-                        <p data-i18n="p4_desc">Meticulous stitching meets modern utility.</p>
-                        <a href="https://wa.me/+905550453659" class="btn btn-whatsapp" data-i18n="btn_whatsapp">Inquire
-                            on
-                            WhatsApp</a>
-                    </div>
-                </div>
-                <!-- Product 5 -->
-                <div class="product-card">
-                    <div class="product-image">
-                        <img src="assets/product_5.png" alt="The Voyage Messenger">
-                    </div>
-                    <div class="product-info">
-                        <h3 data-i18n="p5_name">The Voyage Messenger</h3>
-                        <p data-i18n="p5_desc">Elegant companion for your daily journey.</p>
-                        <a href="https://wa.me/+905550453659" class="btn btn-whatsapp" data-i18n="btn_whatsapp">Inquire
-                            on
-                            WhatsApp</a>
-                    </div>
-                </div>
-                <!-- Product 6 -->
-                <div class="product-card">
-                    <div class="product-image">
-                        <img src="assets/product_6.png" alt="The Gold-Line Cardholder">
-                    </div>
-                    <div class="product-info">
-                        <h3 data-i18n="p6_name">The Gold-Line Cardholder</h3>
-                        <p data-i18n="p6_desc">Ultra-slim profile with antique gold accents.</p>
-                        <a href="https://wa.me/+905550453659" class="btn btn-whatsapp" data-i18n="btn_whatsapp">Inquire
-                            on
-                            WhatsApp</a>
-                    </div>
-                </div>
+            <div id="dynamic-product-grid" class="product-grid">
+                <!-- Products will be loaded dynamically via script.js -->
             </div>
         </section>
 
@@ -167,13 +108,13 @@
 
     <footer id="contact">
         <div class="container footer-content">
-            <div class="footer-logo">GunaLeather Design</div>
+            <div class="footer-logo">GunaLetherDesign</div>
             <div class="footer-links">
-                <a href="https://www.instagram.com/gunaleatherdesign/" data-i18n="footer_instagram">Instagram</a>
-                <a href="https://www.instagram.com/gunaleatherdesign/" data-i18n="footer_facebook">Facebook</a>
-                <a href="https://www.instagram.com/gunaleatherdesign/" data-i18n="footer_contact">Contact</a>
+                <a href="#" data-i18n="footer_instagram">Instagram</a>
+                <a href="#" data-i18n="footer_facebook">Facebook</a>
+                <a href="#" data-i18n="footer_contact">Contact</a>
             </div>
-            <p class="copyright" data-i18n="footer_copy">GunaLeather Design &copy; 2026. All rights reserved.</p>
+            <p class="copyright" data-i18n="footer_copy">GunaLetherDesign &copy; 2026. All rights reserved.</p>
         </div>
     </footer>
 
@@ -185,8 +126,84 @@
         </svg>
     </a>
 
+    <!-- Modals -->
+    <div id="auth-modal" class="modal">
+        <div class="modal-content auth-content">
+            <span class="close-modal">&times;</span>
+            <div class="auth-tabs">
+                <button id="modal-tab-login" class="auth-tab active" data-i18n="auth_login_title">Login</button>
+                <button id="modal-tab-register" class="auth-tab" data-i18n="auth_register_title">Register</button>
+            </div>
+
+            <div id="login-form-container" class="auth-form active">
+                <form id="login-form">
+                    <div class="form-group">
+                        <label for="login-email" data-i18n="auth_email">Email</label>
+                        <input type="email" id="login-email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="login-password" data-i18n="auth_password">Password</label>
+                        <input type="password" id="login-password" required>
+                    </div>
+                    <div id="login-error-msg" class="error-message" style="display: none; margin-bottom: 1rem;"></div>
+                    <div id="login-success-msg" class="success-message" style="display: none; margin-bottom: 1rem;">
+                    </div>
+                    <button type="submit" class="btn btn-primary" data-i18n="auth_login_btn">Login</button>
+                </form>
+                <p class="auth-switch" data-i18n="auth_to_register">Don't have an account? <a href="#"
+                        id="show-register">Register</a></p>
+            </div>
+            <div id="register-form-container" class="auth-form">
+                <form id="register-form">
+                    <div class="form-group">
+                        <label for="reg-name" data-i18n="auth_name">Full Name</label>
+                        <input type="text" id="reg-name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="reg-email" data-i18n="auth_email">Email</label>
+                        <input type="email" id="reg-email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="reg-password" data-i18n="auth_password">Password</label>
+                        <input type="password" id="reg-password" required>
+                    </div>
+                    <div id="reg-error-msg" class="error-message" style="display: none; margin-bottom: 1rem;"></div>
+                    <div id="reg-success-msg" class="success-message" style="display: none; margin-bottom: 1rem;"></div>
+                    <button type="submit" class="btn btn-primary" data-i18n="auth_register_btn">Register</button>
+                </form>
+                <p class="auth-switch" data-i18n="auth_to_login">Already have an account? <a href="#"
+                        id="show-login">Login</a></p>
+            </div>
+            <div id="user-profile-container" style="display: none;">
+                <h2 data-i18n="auth_profile_title">My Account</h2>
+                <div class="profile-info">
+                    <p><strong data-i18n="auth_name">Full Name</strong>: <span id="profile-name-display"></span></p>
+                    <p><strong data-i18n="auth_email">Email</strong>: <span id="profile-email-display"></span></p>
+                </div>
+                <button id="logout-btn" class="btn btn-secondary" data-i18n="auth_logout">Logout</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="cart-modal" class="modal">
+        <div class="modal-content cart-content">
+            <span class="close-modal">&times;</span>
+            <h2 data-i18n="cart_title">Your Cart</h2>
+            <div id="cart-items" class="cart-items">
+                <!-- Cart items will be rendered here -->
+                <p class="empty-cart-msg" data-i18n="cart_empty">Your cart is empty.</p>
+            </div>
+            <div class="cart-footer">
+                <div class="cart-total">
+                    <span data-i18n="cart_total">Total</span>: <span id="cart-total-amount">0.00</span>
+                </div>
+                <button id="checkout-btn" class="btn btn-primary" data-i18n="cart_checkout">Checkout on
+                    WhatsApp</button>
+            </div>
+        </div>
+    </div>
+
     <script src="script.js"></script>
 </body>
-
 
 </html>
